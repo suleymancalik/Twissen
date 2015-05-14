@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TwistCell" rowHeight="157" id="LOf-xy-ZNR" customClass="TwistCell" customModule="ParseStarterProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LOf-xy-ZNR" id="lxl-Ze-Uu7">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bXw-4s-dlp">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="VPU-NQ-8eS"/>
+                            <constraint firstAttribute="height" constant="50" id="dtk-0F-DgR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0M-go-HxN">
+                        <rect key="frame" x="66" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eji-fx-dM2">
+                        <rect key="frame" x="66" y="37" width="33" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnw-12-g0G">
+                        <rect key="frame" x="8" y="66" width="584" height="82"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jnw-12-g0G" firstAttribute="leading" secondItem="lxl-Ze-Uu7" secondAttribute="leadingMargin" id="6dH-wb-WBk"/>
+                    <constraint firstItem="jnw-12-g0G" firstAttribute="top" secondItem="bXw-4s-dlp" secondAttribute="bottom" constant="8" id="8FA-eQ-wox"/>
+                    <constraint firstItem="bXw-4s-dlp" firstAttribute="leading" secondItem="lxl-Ze-Uu7" secondAttribute="leadingMargin" id="DEs-g6-8os"/>
+                    <constraint firstItem="l0M-go-HxN" firstAttribute="leading" secondItem="bXw-4s-dlp" secondAttribute="trailing" constant="8" id="Kr9-08-VA8"/>
+                    <constraint firstItem="l0M-go-HxN" firstAttribute="top" secondItem="lxl-Ze-Uu7" secondAttribute="topMargin" id="N4P-nh-SBx"/>
+                    <constraint firstItem="bXw-4s-dlp" firstAttribute="top" secondItem="lxl-Ze-Uu7" secondAttribute="topMargin" id="f0y-N0-Vta"/>
+                    <constraint firstItem="jnw-12-g0G" firstAttribute="bottom" secondItem="lxl-Ze-Uu7" secondAttribute="bottomMargin" id="h5y-Ia-nuZ"/>
+                    <constraint firstItem="eji-fx-dM2" firstAttribute="top" secondItem="l0M-go-HxN" secondAttribute="bottom" constant="8" id="h6M-VV-0xl"/>
+                    <constraint firstItem="eji-fx-dM2" firstAttribute="leading" secondItem="bXw-4s-dlp" secondAttribute="trailing" constant="8" id="xg8-2H-LNE"/>
+                    <constraint firstItem="jnw-12-g0G" firstAttribute="trailing" secondItem="lxl-Ze-Uu7" secondAttribute="trailingMargin" id="xpJ-PI-oUf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgPicture" destination="bXw-4s-dlp" id="gCM-Ks-yLC"/>
+                <outlet property="lblDate" destination="eji-fx-dM2" id="DIy-cs-CbA"/>
+                <outlet property="lblUsername" destination="l0M-go-HxN" id="r3X-1L-Ixj"/>
+                <outlet property="txtTwist" destination="jnw-12-g0G" id="LmE-iO-HeL"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="181.5"/>
+        </tableViewCell>
+    </objects>
+</document>
